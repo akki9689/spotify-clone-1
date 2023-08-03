@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    
+}
+.main-logo{
+  margin: 20px;
+    width: 60%;
+
+
+}
+
+.left-main{
+
+    flex: 1;
+    background-color: black;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    
+    
+}
+
+.right-main{
+    flex: 4;
+    background-color:#222222;
+
+}
+.left-main ul{
+    margin-top: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
+    list-style-type: none;
+    transition: all 0.3s ;
+}
+.left-main ul:hover{
+    background-color: #303030;
+  
+    
+
+}
+
+.left-main ul a{
+    text-decoration: none;
+    color: aliceblue;
+
+    
+}
+.left-main ul li img{
+    height: auto;
+    width: 1.5vw;
+}
+.home{
+    margin-left: 20px;
+    font-size: 1vw;
+}
+
+.playlist{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.right-main{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.right-main nav{
+    position: sticky;
+    top: 0px;
+    height: 10vh;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-nav{
+    margin-left: 10px;
+}
+.right-nav{
+    margin-right: 10px;
+}
+.right-main .left-nav>img{
+   
+    height: 4vh;
+   
+}
+
+.right-main .right-nav>img{
+   height: 4vh;
+}
+.right-main .right-nav>img:hover{
+    box-shadow: 2px 2px 10px white;
+}
+.right-main .middle-list{
+    margin: 50px;
+}
+.middle-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+.middle-list .card{
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    
+justify-content: space-between;
+
+    background-color: #303030;
+    transition: all 0.5s ease 0.1s;
+}
+.middle-list .card:hover{
+  background: linear-gradient(rgb(212, 219, 212),rgb(86, 135, 86),green)
+  ;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width:600px)  {
+    .middle-list .card{
+        margin-top: 30px;
+      
+        height: 10vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        
+    justify-content: space-between;
+    
+        background-color: #303030;
+    }
+}
+.middle-list .card p{
+    font-size: 1.5vw;
+    overflow: hidden;
+    white-space: pre-wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+.middle-list p{
+    color: aliceblue;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.card-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: #181818;
+}
+.col-1{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.col-1>img{
+
+    height: 20vh;
+    width: 90%;
+    
+}
+.col-2 h2{
+    color: white;
+    font-size: 1.1vw;
+    margin-bottom:35px;
+    margin-left: 15px;
+}
+.col-2 p{
+    color:#B3B3B3;
+    font-size: 0.5vw;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.crd{
+    margin-left: 1%;
+    width: 80%;
+    background-color:#222222;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+.card-2{
+    margin: 3%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card-2:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px rgb(78, 75, 75);
+}
+.shows{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{
+   
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5vh;
+    width: 100%;
+    background-color: #181818;
+}
+.footer-last{
+   
+    height: 2.5vh;
+    background-color:#1ed760;
+    display: flex;
+    flex-wrap: wrap;
+justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* index2 style */
+.mr-3{
+    font-size: 1vw;
+}
+.main-2{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    gap: 0.3vw;
+    background-image: linear-gradient(#819c96,#546561,#2c3336,#1b211f);
+}
+.left-main-2{
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: #181818;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    
+   
+
+}
+.main-link-flex{
+    margin-top: 6vh;
+}
+.link-flex>img{
+    height: 3vh;
+}
+
+.spotify-logo{
+    
+    height: 12%;
+    width: 70%;
+
+    
+}
+.main-2 .right-main-2>ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.link-flex{
+    
+    margin-top: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 40px;
+    transition: all 0.5s ease;
+   }
+   
+.link-flex:not(.spotify-logo){
+ height: 5vh;
+ width: 80%;
+ 
+ 
+}
+.link-flex:hover:not(.spotify-logo){
+  background-color: #303030; 
+  transform: scale(1.1);
+}
+.tr{
+    margin-left: 10%;
+}
+.link-flex>a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 1vw;
+}
+.playlist-2{
+    margin-top: 2vw;
+    border-bottom: 1px solid grey;
+}
+.playlist-2>h3{
+    color: #71ef71;
+    font-size: 2vw;
+    text-align: center;
+}
+.sidegirl{
+    height: 20vh;
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    
+}
+
+
+.right-main-2{
+    flex: 4;
+    flex-wrap: wrap;
+   
+}
+.upper{
+    height: 30vh;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    
+}
+.middle{
+    height: 10vh;
+   
+    display: flex;
+    align-items: center;
+    
+}
+.middle>img{
+    
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+   
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.two{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5vw;
+    transition: all 0.5s ease;
+}
+
+.two:hover{
+    background-color: #222222;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.right-now{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.mr-1{
+    color: #ffffff;
+    font-weight: 400;
+}
+.mr{
+    margin-left: 1vw;
+    color: #ffffff;
+    font-weight: 400;
+}
+.inside-bar{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+
+.song-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.song-data>p{
+    margin-bottom: 1vw;
+}
+.footer-2{
+    height: 10vh;
+    background-color:#181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.op>img{
+    cursor: pointer;
+}
+
+
+
+
